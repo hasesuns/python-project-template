@@ -24,7 +24,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install poetry
-        poetry env use python3.11.0
         poetry config virtualenvs.create false && poetry install
 
     - name: Check with black
